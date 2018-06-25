@@ -1,0 +1,72 @@
+
+<div class="tabs">
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a [ngClass]="{'active': count === 1}" (click)="count = 1">Clean Design</a></li>
+        <li><a [ngClass]="{'active': count === 2}" (click)="count = 2">Element Rich</a></li>
+        <li><a [ngClass]="{'active': count === 3}" (click)="count = 3">Simply Awesome</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="tab" [hidden]="count !== 1">
+        <h3>Clean Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+
+      <div class="tab" [hidden]="count !== 2">
+        <h3>Element Rich</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+
+      <div class="tab" [hidden]="count !== 3">
+        <h3>Simply Awesome</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+      </div>
+    </div><!--content-->
+
+  </div><!--container-->
+</div><!--tabs-->
+
+
+<div class="accordion">
+  <div class="container">
+
+    <div class="item">
+      <a class="accordion-title" (click)="display = 1">How can I transfer money from Paytm wallet to bank account? 
+        <i class="material-icons arrow" [ngClass]="{'up': display === 1}">keyboard_arrow_down</i> </a>
+      <div class="accordion-content" [ngClass]="{'show': display === 1}">
+        <div class="inner-content">
+        <ul>
+            <li> Transfer money to your bank anytime, anywhere! </li>
+            <li> Open the Paytm App & tap on. Passbook.
+            Select 'Send Money to bank'
+            Tap on 'Transfer' to proceed. </li>
+            <li> Enter details (Amount, Account. Number, IFSC) & click 'Send' to. complete the transaction. </li>
+            <li> It's done! Money has been. transferred  successfully. </li>
+        </ul>
+      </div><!--inner content-->
+      </div><!--content-->
+    </div><!--item-->
+
+    <div class="item">
+      <a class="accordion-title" (click)="display = 2">Can we send money from Paytm to bank account?  <i class="material-icons arrow"  [ngClass]="{'up': display === 2}">keyboard_arrow_down</i></a>
+      <div class="accordion-content" [ngClass]="{'show': display === 2}">
+          <div class="inner-content">
+        <p>If you are a new Paytm user without KYC, you have to wait three days to transfer money from your Paytm Wallet to bank account. ... You can send a minimum of Rs. 100 to your bank account via the service. Every Paytm users can transfer up to Rs. 5,000 at a time, with 25,000 per month the limit.</p>
+      </div><!--inner content-->
+      </div><!--content-->
+    </div><!--item-->
+
+    <div class="item">
+        <a class="accordion-title" (click)="display = 3">How can I pay from Paytm?  <i class="material-icons arrow"  [ngClass]="{'up': display === 3}">keyboard_arrow_down</i></a>
+        <div class="accordion-content" [ngClass]="{'show': display === 3}">
+            <div class="inner-content">
+          <p>If you are a new Paytm user without KYC, you have to wait three days to transfer money from your Paytm Wallet to bank account. ... You can send a minimum of Rs. 100 to your bank account via the service. Every Paytm users can transfer up to Rs. 5,000 at a time, with 25,000 per month the limit.</p>
+        </div><!--inner content-->
+        </div><!--content-->
+      </div><!--item-->
+
+  </div><!--container-->
+</div><!--accordion-->
